@@ -15,6 +15,6 @@ export class TvDetailComponent implements OnInit {
 
   ngOnInit(): void {
     const id: number = this.route.snapshot.params['id'];
-    this.detail$ = this.tmdbApi.getDetailById(id, 'tv');
+    this.detail$ = this.tmdbApi.getDetailById(id, 'tv'); 
   }
 }
